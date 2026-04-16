@@ -1,10 +1,7 @@
 # NJ Real Estate Market Analyzer
 
-I'm moving from Kansas to New Jersey in May 2026. My wife starts a new
-job in Midtown NYC in July. We're house-hunting in the Lawrenceville
-area (ZIP 08648). This project pulls 14 years of public housing data
-to help us decide where to buy — and serves as my first portfolio
-project as I transition from a US Army career into data analytics.
+This project pulls 14 years of public housing data
+to help us decide where to buy
 
 ## What this answers
 
