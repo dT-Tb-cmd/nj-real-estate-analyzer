@@ -23,7 +23,16 @@ commute, and tax burden — not from raw price trends.
 *(pending Mapbox API setup)*
 
 ## Q4 — Tax burden comparison
-*(next notebook)*
+
+On a hypothetical $500K home: Hamilton costs **$13,600/yr** in property
+tax, Lawrenceville **$11,400/yr**, Pennington **≥$9,150**, Princeton Jct
+**≥$7,000** (last two are lower bounds — Census top-codes above $10K).
+**Hamilton is $2,200/yr more expensive than Lawrenceville** on the same
+home — $66K over a 30-year mortgage. For our budget, **Lawrenceville
+has a clear tax advantage over Hamilton** and is roughly break-even with
+the premium ZIPs once their higher absolute home values are factored in.
+
+*Source: `notebooks/03-q4-tax-delta.ipynb`*
 
 ## Q5 — Live listings matching filter
 *(pending — ask agent Alexander)*
