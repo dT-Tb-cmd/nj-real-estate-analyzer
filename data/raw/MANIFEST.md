@@ -21,7 +21,21 @@ When you download a file:
 
 | Filename | Source | Downloaded | Description | License / TOS |
 |---|---|---|---|---|
-| *(none yet)* | | | | |
+| `redfin_zip_code_market_tracker_2026-04-14.tsv.gz` | [Redfin Data Center](https://www.redfin.com/news/data-center/) (S3: `redfin-public-data.s3.us-west-2.amazonaws.com/redfin_market_tracker/zip_code_market_tracker.tsv000.gz`) | 2026-04-15 | Full US ZIP-level market tracker, 58 columns × 9.6M rows. Monthly median sale price, PPSF, homes sold, pending sales, new listings, etc. | Public; attribution required ("Redfin, a national real estate brokerage"). Monthly update on 3rd full Fri. |
+| `nj_mercer_4zips.tsv` | Derived from Redfin file above | 2026-04-15 | Filtered subset: just our 4 target ZIPs (08648, 08534, 08619, 08550). 2,794 rows, 1.5 MB. Regeneration command in notes below. | Inherits Redfin TOS |
+
+## Regeneration commands
+
+```bash
+# Re-pull the full Redfin file (file updates monthly; re-fetch if > 5 weeks old)
+curl -o data/raw/redfin_zip_code_market_tracker_YYYY-MM-DD.tsv.gz \
+  https://redfin-public-data.s3.us-west-2.amazonaws.com/redfin_market_tracker/zip_code_market_tracker.tsv000.gz
+
+# Re-filter to our 4 ZIPs
+gunzip -c data/raw/redfin_zip_code_market_tracker_YYYY-MM-DD.tsv.gz | head -1 > data/raw/nj_mercer_4zips.tsv
+gunzip -c data/raw/redfin_zip_code_market_tracker_YYYY-MM-DD.tsv.gz | \
+  grep -E '"Zip Code: (08648|08534|08619|08550)"' >> data/raw/nj_mercer_4zips.tsv
+```
 
 ## Source shortlist (planned)
 
