@@ -153,17 +153,6 @@ jupyter lab notebooks/03-q4-tax-delta.ipynb
   `.twb`; live online URL deferred (install issue with the desktop
   client).
 
-## About me
-
-US Army veteran transitioning into data and AI. Currently pursuing a
-BS in Data Analytics at WGU, planning an MS in AI, targeting an AI
-Architect role. Before this I integrated weapon systems
-(Boomerang+CROW), automated unit training schedules, and redesigned
-motorpool maintenance ops. AI is the next toolkit, not a career
-restart.
-
-GitHub: [dT-Tb-cmd](https://github.com/dT-Tb-cmd)
-
 ## License
 
 Code: MIT.
